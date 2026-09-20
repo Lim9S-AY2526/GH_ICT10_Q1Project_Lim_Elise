@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Receipt Generator</title>
+  <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+  <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Skewer</h1>
+    <nav>
+      <a href="sku.html">SKU Generator</a> | <a href="index.html">Home</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Receipt Generator</h2>
+    <form>
+      <input type="checkbox" id="item1" value="110"> Affogato | ₱110<br>
+      <input type="checkbox" id="item2" value="120"> Cold Brew Malt | ₱120<br>
+      <input type="checkbox" id="item3" value="100"> Spanish Latte | ₱100<br>
+      <input type="checkbox" id="item4" value="55"> Americano | ₱55<br>
+      <input type="checkbox" id="item5" value="129"> Caramel Macchiato | ₱129<br><br>
+      <input type="button" py-click="create_order" value="Create Order" class="button">
+    </form>
+    <div id="output" class="output">Your order summary will appear here.</div>
+  </div>
+
+  <py-script src="main.py"></py-script>
+</body>
+</html>
