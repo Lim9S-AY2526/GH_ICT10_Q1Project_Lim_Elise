@@ -14,15 +14,15 @@ def sku_generation(e):
     # Get stock quantity input
     stock = document.getElementById("stock").value
 
-    # SKU code
+    # Build SKU code
     sku_key = category + "_" + product + "_" + stock
 
-    # Display the generated SKU in output area
-    displays("Generated SKU: " + sku_key, target='output')
+    # Display the generated SKU in output
+    display("Generated SKU: " + sku_key, target='output')
 
 # Receipt Generator Function
 def create_order(e):
-    # Clear previous output
+    # Clear previous output area
     document.getElementById('output').innerHTML = " "
 
     # Get product checkboxes and their values
@@ -32,7 +32,7 @@ def create_order(e):
     prod4 = document.getElementById("item4")   # Americano
     prod5 = document.getElementById("item5")   # Caramel Macchiato
 
-    # Calculate subtotal 
+    # Calculate subtotal
     subtotal = (
         float(prod1.value) * prod1.checked +
         float(prod2.value) * prod2.checked +
@@ -53,13 +53,13 @@ def create_order(e):
         ("Americano", prod4),
         ("Caramel Macchiato", prod5),
     ]
-    selected = [f"{name} ₱{p.value}" for name, p in products if p.checked]
+    selected = [name + " ₱" + p.value for name, p in products if p.checked]
 
     # Combine selected items into one string
     items_text = ", ".join(selected)
 
+    # Summary
     summary = "Subtotal = ₱" + str(subtotal) + " | VAT = ₱" + str(vat) + " | Total = ₱" + str(total_amount)
 
     # Display items and summary
     display(items_text + " || " + summary, target='output')
-
