@@ -18,7 +18,7 @@ def sku_generation(e):
     sku_key = category + "_" + product + "_" + stock
 
     # Display the generated SKU in output area
-    display("Generated SKU: " + sku_key, target='output')
+   display("<span style='color:black;'>Generated SKU: " + sku_key + "</span>", target='output')
 
 # Receipt Generator Function
 def create_order(e):
