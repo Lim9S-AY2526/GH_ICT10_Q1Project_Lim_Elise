@@ -1,11 +1,11 @@
 body {
   font-family: Tahoma;
-  background-color: #ffe6f2; /* pastel pink */
+  background-color: #ffe6f2; 
   text-align: center;
   font-size: 18px;
   line-height: 1.5;
 }
-
+/*Container*/
 .container {
   background: rgba(255,255,255,0.95);
   padding: 30px;
@@ -14,26 +14,26 @@ body {
   border-radius: 15px;
   box-shadow: 0px 0px 12px rgba(0,0,0,0.2);
 }
-
+/*Headings*/
 h1, h2 {
   font-size: 28px;
   margin-bottom: 20px;
   color: #333;
 }
-
+/*Labels*/
 label {
   display: block;
   margin: 12px 0;
   font-size: 18px;
 }
-
+/*Inputs*/
 .input {
   font-size: 18px;
   padding: 8px;
   width: 75%;
   margin: 8px 0;
 }
-
+/*Buttons*/
 .button {
   background-color: #ff99cc;
   border: none;
@@ -48,7 +48,7 @@ label {
 .button:hover {
   background-color: #ff66b2;
 }
-
+/*Output*/
 .output {
   font-size: 20px;
   font-weight: bold;

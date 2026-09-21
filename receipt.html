@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Header w/ navigation -->
   <header>
     <h1>Skewer</h1>
     <nav>
@@ -15,16 +16,20 @@
     </nav>
   </header>
 
+  <!-- Receipt generator form -->
   <div class="container">
     <h2>Receipt Generator</h2>
     <form>
+      <!-- Each checkbox  -->
       <input type="checkbox" id="item1" value="110"> Affogato | ₱110<br>
       <input type="checkbox" id="item2" value="120"> Cold Brew Malt | ₱120<br>
       <input type="checkbox" id="item3" value="100"> Spanish Latte | ₱100<br>
       <input type="checkbox" id="item4" value="55"> Americano | ₱55<br>
       <input type="checkbox" id="item5" value="129"> Caramel Macchiato | ₱129<br><br>
+      <!-- Button that triggers Python function -->
       <input type="button" py-click="create_order" value="Create Order" class="button">
     </form>
+    <!-- Output -->
     <div id="output" class="output">Your order summary will appear here.</div>
   </div>
 

@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Header w/ navigation -->
   <header>
     <h1>Skewer</h1>
     <nav>
@@ -15,9 +16,11 @@
     </nav>
   </header>
 
+  <!-- SKU generator form -->
   <div class="container gradient">
     <h2>SKU Generator</h2>
     <form>
+      <!-- Dropdown -->
       <label>Category</label>
       <select id="categories" class="input">
         <option value="perish">Perishables</option>
@@ -25,19 +28,23 @@
         <option value="non">Non-Perishables</option>
       </select><br><br>
 
+      <!-- Product name input -->
       <label>Product Name</label>
       <input type="text" id="prod" placeholder="e.g. Bottled Water" class="input"><br><br>
 
+      <!-- Stock quantity input -->
       <label>Stock Quantity</label>
       <input type="number" id="stock" placeholder="e.g. 50" class="input"><br><br>
 
+      <!-- Button Python function -->
       <input type="button" py-click="sku_generation" value="Generate SKU Key" class="button">
     </form>
+    <!-- Output -->
     <div id="output" class="output">Your generated SKU will appear here.</div>
   </div>
 
   <footer>
-    <p>SKU Generator — 1st Quarter Project</p>
+    <p>SKU Generator - 1st Quarter Project</p>
   </footer>
 
   <py-script src="main.py"></py-script>
