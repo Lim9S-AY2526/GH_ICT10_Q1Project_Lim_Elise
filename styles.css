@@ -56,7 +56,8 @@ label {
   padding: 15px;
   background: rgba(255,255,255,0.7);
   border-radius: 10px;
-  line-height: 1.8; /* extra spacing between lines */
+  line-height: 1.8;
+  color: black;
 }
 
 .gradient {
