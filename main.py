@@ -18,11 +18,11 @@ def sku_generation(e):
     sku_key = category + "_" + product + "_" + stock
 
     # Display the generated SKU in output area
-   display("<span style='color:black;'>Generated SKU: " + sku_key + "</span>", target='output')
+    displays("Generated SKU: " + sku_key, target='output')
 
 # Receipt Generator Function
 def create_order(e):
-    # Clear previous output area
+    # Clear previous output
     document.getElementById('output').innerHTML = " "
 
     # Get product checkboxes and their values
@@ -62,3 +62,4 @@ def create_order(e):
 
     # Display items and summary
     display(items_text + " || " + summary, target='output')
+
